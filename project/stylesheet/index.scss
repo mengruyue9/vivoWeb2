@@ -2,14 +2,13 @@
 a{text-decoration: none;color: #000}
 ul,li{list-style: none;}
 img{border: 0;display: block;}
-b{font-weight: normal;}
+b,i{font-weight: normal;font-style:normal;}
 h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%}
 #header{
 	height:45px;
 	width: 100%;
 	background:#191717;
 	position: absolute;
-	opacity: 0.8;
 	z-index: 100
 }
 .logo{
@@ -18,17 +17,23 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%}
 	top: 0;
 	z-index: 10000;
 }
+#header #user_menu{width: 182px;height: 0px;position: absolute;top: 44px;right: 32px;background: #fff;}
+#header #user_menu ul{padding: 30px 0 0 38px;display: none;}
+#header #user_menu ul li{font-size: 12px}
+#header #user_menu ul li span,#header #user_menu ul li i{display: inline-block;height: 46px;line-height: 46px;}
+#header #user_menu ul li span{margin-right: 10px;height: 20px;width: 20px;font-size: 20px;padding-top: 4px;}
 #header #nav_list{width:782px;margin: 0 auto;height: 44px;}
 #header #nav_list li{padding: 0 22px;float: left;height: 44px;line-height: 44px;}
 #header #nav_list li a{color: #fff;font-size: 14px;display: block;height: 44px;line-height: 44px;}
 #header #nav_list li a:hover{color: #b0b0b0}
 #header #search,#header #user{position: absolute;color: #fff;cursor: pointer;}
 #header #search{font-size: 16px;right: 126px;top: 14px;}
-#header #user{font-size: 14px;right: 36px;top: 15px;}
-#pull_down{width:100%;height: 200px;background: #191717;position: absolute;top: 44px;opacity: 0;}
-#pull_down .box{width:200px;height: 180px;padding:10px 0 10px 0;background:red;width: 200px;margin-left: 260px;}
-#pull_down .box p img{height:100px;}
-#pull_down .box h1{text-align: center;}
+#header #user{font-size: 14px;right: 36px;top: 0px;line-height: 44px;width: 50px;text-align: center;}
+#pull_down{height: 0px;background: #191717;position: absolute;top: 44px;width: 100%}
+#pull_down .box_list{margin-left: 260px;}
+#pull_down .box_list .box{width:200px;height: 180px;padding:10px 0 10px 0;width: 200px;float: left;text-align: center;color: #fff}
+#pull_down .box_list .box p img{height:100px;margin: 0 auto}
+#pull_down .box_list .box h1,#pull_down .box_list .box h2{height: 30px;line-height: 30px;}
 #banner{height:606px;background:#280001;position: relative;overflow: hidden;width: 100%;}
 #banner ol{width:192px;height:10px;position: absolute;bottom: 44px;left: 50%;margin-left: -96px;z-index: 1000}
 #banner ol li{float: left;width: 40px;height: 2px;background: #fff;margin-right: 8px;opacity: 0.5;margin-top: 4px;}
@@ -37,7 +42,7 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%}
 #banner ul li img{width: 100%;height: 606px;}
 /*quick_nav */
 #quick_nav{height: 236px;padding-top: 4px;}
-#quick_nav div{width: 314px;height:236px;margin-left: 2px;text-align: center;float: left;position: relative;}
+#quick_nav div{width: 313px;height:236px;margin-left: 2px;text-align: center;float: left;position: relative;}
 #quick_nav .list0{margin-left: 1px;}
 #quick_nav .list0 h4{color: #000;}
 #quick_nav .list0 a{color: #000;}
@@ -69,3 +74,12 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%}
 #footer .bottom #menu p span{font-size: 22px;}
 #footer .bottom #menu p i{margin-left: 12px;font-style: normal;text-align: left;}
 #footer .bottom #menu p img{position: absolute;left: -151px;top:0;display: none;box-shadow:#ccc -8px 0px  10px -2px; }
+/* 登陆界面css */
+#login_content{height: 710px;background: #04003d;position: relative;}
+#login_bg{width: 1200px;margin: 0 auto;}
+#login_content .logo{left: 66px}
+#login_content .logo img{width: 97px;height: 97px}
+#login_window{height: 486px;width: 420px;padding: 30px;width: 360px;height: 424px;position: absolute;top: 130px;right: 30px;background: #fff}
+#login_window input{height: 50px;width: 100%;font-size: 18px}
+#login_window p{text-align: center;}
+#login_window h1{text-align: center;font-size: 22px;font-weight:500;}

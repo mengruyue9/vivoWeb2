@@ -7,13 +7,48 @@ define(["jquery","jquery-cookie","startMove"],function($,stasrtMove) {
 			nav_msg();
 
 		});*/
+		/*用户信息下拉菜单*/
+		$("#user,#user_menu,#user_menu ul").mouseenter(function () {
+			$("#user_menu").stop().animate({height:"250px"},300);
+			$("#user_menu ul").css("display","block").css("cursor","pointer");
+			
+		})
+		$("#user_menu ul li").mouseenter(function () {
+			$("#user_menu ul li").eq($(this).index()).css("color","#57b0de");
+		})
+		$("#user_menu ul li").mouseleave(function () {
+			$("#user_menu ul li").eq($(this).index()).css("color","#333");
+		})
+		
+		$("#user,#user_menu,#user_menu ul").mouseleave(function () {
+			$("#user_menu").stop().animate({height:"0px"},300);
+			$("#user_menu ul").css("display","none").css("cursor","pointer");
+		})
+		/*登陆注册点击事件*/
+		$("#user_menu ul li").eq($(this).index()).click(function () {
+			alert($(this).index());
+			if ($(this).index()== 0) {
+				open("../shoppingcart.html","_self");
+			}else if ($(this).index() == 1) {
+				open("../login.html","_self");
+			}else if ($(this).index()== 2) {
+				open("../login.html","_self");
+			}else if ($(this).index()== 3) {
+				open("../login.html","_self");
+			}
+		})
+		//导航下拉菜单
 		$("#nav_list li,#pull_down").mouseenter(function(){
 			$("#pull_down").stop().animate({height:"200px"},300);
-			//nav_msg();
+			$(".box_list").css("display","block");
+			nav_msg();
 		})
 		$("#nav_list li,#pull_down").mouseleave(function(){
 			$("#pull_down").stop().animate({height:0},300);
+			$(".box_list").css("display","none");
 		})
+
+
 		/*$("#nav_list li, #pull_down").mouseleave(function(){
 			$("#pull_down").stop().animate({height:0},300);
 		});*/
@@ -53,11 +88,12 @@ define(["jquery","jquery-cookie","startMove"],function($,stasrtMove) {
 					success: function(res){
 						var html = '';
 						for(var i = 0; i < res.length; i++){
-							html += `
+							html += `<div class="box_list">
 							<div class="box">
-								<img src="${res[i].images}" alt="">
+								<p><img src="${res[i].images}" alt=""></p>
 								<h1>${res[i].title}</h1>
-							</div>`;
+								<h2>${res[i].price}元</h2>
+							</div></div>`;
 						}
 						$("#pull_down").html(html);
 
