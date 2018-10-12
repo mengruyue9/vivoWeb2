@@ -8,27 +8,42 @@
 	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
 	<script type="text/javascript" src = "js/require.js" async = "true" defer data-main = "js/main"></script>
 </head>
-<body>
+<body class="iconfont"> 
+	<div id="register_content">
+		<div id="register_box">
+			<img id="vivo_logo" src="images/vivo-logo.jpg" alt="">
+			<h2>vivo帐号注册</h2>
+			<input type="text" placeholder="请输入手机号">
+			<div><img src="images/checked.png" alt=""><span>我已阅读并接受<a href="">《vivo服务协议》</a></span></div>
+
+			<input type="button" value="下一步">
+		</div>
+	</div>
 	<div id="login_content">
 		<img id = "login_bg" src="images/201810121030342840.jpg" alt="">
 		<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
 		<div id="login_window">
 			<h1>帐号登陆</h1>
-			<input type="text" placeholder="手机号/邮箱/用户名"><br>
-			<input type="password" placeholder="密码"><br>
+			<input id="username" type="text" placeholder="手机号/邮箱/用户名"><br>
+			<input id="password" type="password" placeholder="密码"><br>
 			<span class="verify"></span><br>
-			<p><input type="checkBox">两周内自动登录<a href="">忘记密码？</a></p>
-			<input type="button" value="登陆"><br>
-			<input type="button" value="注册vivo账号"><br>
-			<p>其他方式</p>
-			<div>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
+			<p class="checkBox"><input type="checkBox">两周内自动登录<a href="">忘记密码？</a></p>
+			<input id="loginBtn" type="button" value="登陆"><br>
+			<input id="registBtn" type="button" value="注册vivo账号"><br>
+			<p class="otherStyle">其他方式</p>
+			<div id="thirdLogin">
+				<span><a href="">&#xe6b4;</a></span>
+				<span><a href="">&#xe65b;</a></span>
+				<span><a href="">&#xe665;</a></span>
+				<span><a href="">&#xe62f;</a></span>
+				<span><a href="">&#xe65d;</a></span>
 			</div>
 		</div>
+	</div>
+	<div id="login_bottom">
+		<p><a href=""><span>&#xe617;</span>在线客服</a><a href="">400-678-9688(24小时全国服务热线)</a></p>
+		<p>COPYRIGHT © 1996-2017  ALL
+			RIGHTS RESERVED.粤ICP备05100288号</p>
 	</div>
 </body>
 </html>

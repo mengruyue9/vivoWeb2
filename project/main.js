@@ -6,7 +6,8 @@ require.config({
 		"jquery-cookie":"jquery.cookie",
 		"startMove":"startMove",
 		"index":"index",
-		"roll":"roll"
+		"roll":"roll",
+		"login_regsit":"login_regsit"
 	},
 	shim:{
 		"jquery-cookie":["jquery"],
@@ -17,7 +18,8 @@ require.config({
 	
 })
 
-require(["index","roll","magnify"],function (index,roll,magnify) {
+require(["index","roll","login_regsit"],function (index,roll,login_regsit) {
 	index.main();
 	roll.roll();
+	login_regsit.loginFun();
 })

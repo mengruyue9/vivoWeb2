@@ -4,6 +4,10 @@
   padding: 0;
   line-height: 100%; }
 
+input, p {
+  margin: 0;
+  padding: 0; }
+
 a {
   text-decoration: none;
   color: #000; }
@@ -321,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   box-shadow: #ccc -8px 0px  10px -2px; }
 
-/* 登陆界面css */
+/* 登陆注册界面css */
 #login_content {
   height: 710px;
   background: #04003d;
@@ -339,11 +343,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 97px; }
 
 #login_window {
-  height: 486px;
   width: 420px;
   padding: 30px;
   width: 360px;
-  height: 424px;
   position: absolute;
   top: 130px;
   right: 30px;
@@ -352,7 +354,47 @@ h1, h2, h3, h4, h5, h6 {
 #login_window input {
   height: 50px;
   width: 100%;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-bottom: 15px;
+  outline: none; }
+
+#login_window #username, #login_window #password {
+  font-size: 14px;
+  text-indent: 1em;
+  border: 1px solid #e1e1e1;
+  outline: none;
+  background: none; }
+
+#login_window .checkBox {
+  text-align: left;
+  font-size: 10px;
+  color: #666; }
+
+#login_window .checkBox input {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  border-radius: none; }
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #e3e3e3; }
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e3e3e3; }
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e3e3e3; }
+
+input::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #e3e3e3; }
+
+#login_window .checkBox a {
+  float: right;
+  color: #666; }
 
 #login_window p {
   text-align: center; }
@@ -360,4 +402,83 @@ h1, h2, h3, h4, h5, h6 {
 #login_window h1 {
   text-align: center;
   font-size: 22px;
-  font-weight: 500; }
+  margin-bottom: 30px; }
+
+#loginBtn {
+  background: #2899f7;
+  border: 0;
+  color: #fff;
+  cursor: pointer; }
+
+#registBtn {
+  background: #fff;
+  border: 1px solid #cccccc;
+  color: #666679;
+  cursor: pointer; }
+
+#login_window .otherStyle {
+  height: 42px;
+  line-height: 42px;
+  font-size: 12px;
+  color: #999; }
+
+#thirdLogin {
+  text-align: center; }
+
+#thirdLogin span a {
+  color: #86c8ff;
+  font-size: 26px; }
+
+#login_bottom {
+  height: 127px;
+  background: #f7f7f7;
+  padding-top: 37px; }
+
+#login_bottom p {
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  font-size: 12px;
+  color: #a89db3; }
+
+#login_bottom p a {
+  color: #666;
+  padding: 0 8px; }
+
+/* 注册界面 */
+#register_content {
+  height: 710px;
+  background: #f7f7f7;
+  overflow: hidden;
+  text-align: center; }
+
+#register_box {
+  padding: 50px 284px 0;
+  width: 332px;
+  height: 488px;
+  box-shadow: 0 0 10px 3px #ccc;
+  margin: 0 auto;
+  margin-top: 80px;
+  background: #fff; }
+
+#register_box #vivo_logo {
+  margin: 0 auto 32px; }
+
+#register_box h2 {
+  font-size: 18px;
+  margin-bottom: 70px; }
+
+#register_box input {
+  width: 332px;
+  height: 50px; }
+
+#register_box div {
+  text-align: left; }
+
+#register_box div span {
+  font-size: 12px; }
+
+#register_box div img {
+  display: inline-block; }
+
+/*  */
