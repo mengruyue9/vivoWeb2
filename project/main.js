@@ -7,7 +7,8 @@ require.config({
 		"startMove":"startMove",
 		"index":"index",
 		"roll":"roll",
-		"login_regsit":"login_regsit"
+		"login_regsit":"login_regsit",
+		"products":"products"
 	},
 	shim:{
 		"jquery-cookie":["jquery"],
@@ -18,8 +19,9 @@ require.config({
 	
 })
 
-require(["index","roll","login_regsit"],function (index,roll,login_regsit) {
+require(["index","roll","login_regsit","products"],function (index,roll,login_regsit,products) {
 	index.main();
 	roll.roll();
 	login_regsit.loginFun();
+	products.productsFun();
 })

@@ -18,6 +18,8 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%}
 	top: 0;
 	z-index: 10000;
 }
+#logo a{float: left;color: #008ddc;height: 44px;margin-left: 32px;line-height: 44px;font-size: 74px;cursor: pointer;}
+#logo a:hover{color: #50afff;}
 #header #user_menu{width: 182px;height: 0px;position: absolute;top: 44px;right: 32px;background: #fff;}
 #header #user_menu ul{padding: 30px 0 0 38px;display: none;}
 #header #user_menu ul li{font-size: 12px}
@@ -115,7 +117,7 @@ input::-ms-input-placeholder {
 #login_bottom p{height: 26px;line-height: 26px;text-align: center;font-size: 12px;color: #a89db3}
 #login_bottom p a{color: #666;padding: 0 8px}
 /* 注册界面 */
-#register_content{height: 710px;background: #f7f7f7;overflow: hidden;text-align: center;}
+#register_content{height: 710px;background: #f7f7f7;overflow: hidden;text-align: center;display: none;}
 #register_box{padding:50px 284px 0;width: 332px;height: 488px;box-shadow: 0 0 10px 3px #ccc;margin: 0 auto;margin-top: 80px;background: #fff;}
 #register_box #vivo_logo{margin: 0 auto 32px;}
 #register_box h2{font-size: 18px;margin-bottom: 70px;}
@@ -123,4 +125,8 @@ input::-ms-input-placeholder {
 #register_box div{text-align: left;}
 #register_box div span{font-size: 12px;}
 #register_box div img{display: inline-block;}
+#register_box #phoneNumber{text-indent: 1em;font-size: 16px;margin-bottom: 12px;}
+#agreement{height: 48px;line-height: 48px;}
+#agreement img{margin-right: 14px;}
+#next{background: #2899f7;font-size: 18px;border-style: none;color: #fff;}
 /*  */

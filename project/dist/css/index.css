@@ -40,6 +40,18 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   z-index: 10000; }
 
+#logo a {
+  float: left;
+  color: #008ddc;
+  height: 44px;
+  margin-left: 32px;
+  line-height: 44px;
+  font-size: 74px;
+  cursor: pointer; }
+
+#logo a:hover {
+  color: #50afff; }
+
 #header #user_menu {
   width: 182px;
   height: 0px;
@@ -450,7 +462,8 @@ input::-ms-input-placeholder {
   height: 710px;
   background: #f7f7f7;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 #register_box {
   padding: 50px 284px 0;
@@ -480,5 +493,23 @@ input::-ms-input-placeholder {
 
 #register_box div img {
   display: inline-block; }
+
+#register_box #phoneNumber {
+  text-indent: 1em;
+  font-size: 16px;
+  margin-bottom: 12px; }
+
+#agreement {
+  height: 48px;
+  line-height: 48px; }
+
+#agreement img {
+  margin-right: 14px; }
+
+#next {
+  background: #2899f7;
+  font-size: 18px;
+  border-style: none;
+  color: #fff; }
 
 /*  */

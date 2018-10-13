@@ -2,23 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>vivo智能手机网站</title>
+	<title>NEX系列-vivo智能手机官方网站</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" type="text/css" href="css/index.min.css">
 	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/products.min.css">
 	<script type="text/javascript" src = "js/require.js" async = "true" defer data-main = "js/main"></script>
-	<script type="text/javascript">
-		window.onload = function () {
-			require(["index"],function (index) {
-				index.main();
-				//roll.roll();
-			})
-		}
-	</script>
 </head>
-<body class="iconfont">
-    <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+<body>
+
 	<div id="header" class="iconfont">
+		<div id="logo"><a href="index.html">&#xe82e;</a></div>
 		<div id="user_menu">
 			<ul>
 				<li><span>&#xe601;</span><i>购物车</i></li>
@@ -27,14 +21,8 @@
 				<li><span>&#xe62d;</span><i>登陆/注册</i></li>
 			</ul>
 		</div>
-		<div id="pull_down">
-			<!-- <div class="box">
-				<img src="${res[i].images}" alt="">
-				<h1>${res[i].title}</h1>
-			</div> -->
-		</div>
 		<ul id="nav_list">
-			<li><a href="products-nex.html">NEX系列</a></li>
+			<li><a href="#">NEX系列</a></li>
 			<li><a href="">X系列</a></li> 
 			<li><a href="">Z系列</a></li> 
 			<li><a href="">Y系列</a></li> 
@@ -47,24 +35,88 @@
 		<div id="search">&#xe61e;</div>
 		<div id="user">&#xe61f;</div>
 	</div>
-	
-	<div id="content">
-		<div id="banner">
-			<ol>
-		    	<li class="active"></li>
-		        <li></li>
-		        <li></li>
-		        <li></li>
-		    </ol>
-			<ul>
-				<li><a href="#"><img src="images/vivo-banner-2018xcj-bg.jpg" alt="广告一" /></a></li>
-				<li><a href="#"><img src="images/vivo-banner-nexys-bg.jpg" alt="广告二" /></a></li>
-				<li><a href="#"><img src="images/vivo-banner-x23logophone-bg.jpg" alt="广告三" /></a></li>
-				<li><a href="#"><img src="images/vivo-banner-z1-bg.jpg" alt="广告四" /></a></li>
-				<li><a href="#"><img src="images/vivo-banner-2018xcj-bg.jpg" alt="广告一" /></a></li>
-			</ul>
+	<div class="products_banner">
+		<div class ="banner">
+			<img src="images/20180611093231280824_original.png" alt="">
+			<div class="link">
+				<a href="">
+					<div class="buttonBuy">
+						<div class="title">进一步了解</div>
+						<div class="line"></div>
+					</div>
+				</a>
+				<a href="">
+					<div class="buttonBuy">
+						<div class="title">立即购买</div>
+						<div class="line"></div>
+					</div>
+				</a>
+				<a href="" class="del_right">
+					<div class="buttonBuy">
+						<div class="title ">门店选购</div>
+						<div class="line"></div>
+					</div>
+				</a>
+			</div>
 		</div>
-		<div id="quick_nav"></div>
+		
+
+	</div>
+	<div id="products_cont">
+		<div id="center">
+		  	<div id="phone_sort">
+				<div class="prev"></div>
+				<div class="swiper-container">
+					<ul>
+						<li class="swiper-slide">
+							<img src="images/20180605201636604320_original.png" alt="">
+							<p>NEX旗舰版</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="images/20180605201647284128_original.png" alt="">
+							<p>NEX & NEX屏幕指纹版</p>
+						</li>
+					</ul>
+				</div>
+				<div class="next"></div>
+			</div>
+			<div class="product_single_box">
+				<div class="product_single">
+					<div class="single_text_right text_white">
+						<div>NEX</div>
+						<div>零界全面屏</div>
+						<div>升降式前置摄像头</div>
+						<a href="">
+							<div class="buttonBuy">
+								<div class="title">进一步了解</div>
+								<div class="line"></div>
+							</div>
+						</a>
+						<a href="">
+							<div class="buttonBuy">
+								<div class="title">立即购买</div>
+								<div class="line"></div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="moreAccessories">
+				<img src="images/moreAccessories.png" alt="">
+				<div class="buttonlink">
+					<a href="">
+						<div class="buttonBuy">
+							<div class="title">更多配件</div>
+							<div class="line"></div>
+						</div>
+					</a>
+				</div>
+				<div class="accessories_line1">
+				
+				</div>
+			</div>
+			
+		</div>
 	</div>
 	<div id="footer">
 		<div class="top">

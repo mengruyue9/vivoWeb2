@@ -26,7 +26,6 @@ define(["jquery","jquery-cookie","startMove"],function($,stasrtMove) {
 		})
 		/*登陆注册点击事件*/
 		$("#user_menu ul li").eq($(this).index()).click(function () {
-			alert($(this).index());
 			if ($(this).index()== 0) {
 				open("../shoppingcart.html","_self");
 			}else if ($(this).index() == 1) {
