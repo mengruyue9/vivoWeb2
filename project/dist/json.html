@@ -5,9 +5,60 @@
 	<title>Document</title>
 	<script>
 		var obj = {
-			
+			header:[
+				{title:"NEX系列",href:"products-nex.html"},
+				{title:"X系列",href:"X.html"},
+				{title:"Z系列",href:"Z.html"},
+				{title:"Y系列",href:"Y.html"},
+				{title:"商城",href:"vivoStore.html"},
+				{title:"体验店",href:"K_POINT.html"},
+				{title:"Funtouch OS",href:""},
+				{title:"服务",href:""},
+				{title:"社区",href:""}],
+			content:[
+			{
+				banner:
+				{title_image:"images/20180611093231280824_original.png",
+				 bg_images:"../images/2018061109300284195_original.jpg"
+				}
+			},
+			{
+				phone_sort:[{img:"images/20180605201636604320_original.png",title:"NEX旗舰版"},{img:"images/20180605201647284128_original.png",title:"NEX & NEX屏幕指纹版"}]
+			},
+			{
+				product_single:{title1:"NEX",title2:"零界全面屏",title3:"升降式前置摄像头",bg_images:"../images/20180611094235569879_original.jpg"}
+			},
+			{
+				product_parts:[{
+									id:1,
+									title1:"双引擎闪充",
+									title2:"原装10V/2.25A闪充充电器",
+									img:"../images/20180724174044906761_original.jpg"
+									
+								},
+								{
+									id:2,
+									title1:"NEX系列原装",
+									title2:"原装Type-C数据线",
+									img:"../images/20180724174645450868_original.jpg"
+								},
+								{
+									id:3,
+									title1:"XE600i",
+									title2:"卓越音质 佩戴舒适",
+									img:"../images/accessories1_1.jpg"
+								},
+								{
+									id:4,
+									title1:"vivo休闲双肩包",
+									title2:"多功能收纳系统",
+									img:"../images/20180612105953511498_original.jpg"
+								}]
+			}
+			]
 		}
 		var str = JSON.stringify(obj);
+		document.write(str);
 	</script>
 </head>
 <body>

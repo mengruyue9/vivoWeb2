@@ -1,12 +1,12 @@
 define(["jquery","jquery-cookie"],function($) {
 	function productsFun() {
-		$(".banner .link a").mouseenter(function() {
-			$(".banner .link a").eq($(this).index()).find($(".line"))
-			.stop().animate({width:"100%"},300)
+		$(".buttonBuy").mouseenter(function() {
+			$(this).find($(".line"))
+			.stop().animate({width:"100%"},500)
 		});
-		$(".banner .link a").mouseleave(function() {
-			$(".banner .link a").eq($(this).index()).find($(".line"))
-			.stop().animate({width:10},300)
+		$(".buttonBuy").mouseleave(function() {
+			$(this).find($(".line"))
+			.stop().animate({width:10},500)
 		});
 		
 	}

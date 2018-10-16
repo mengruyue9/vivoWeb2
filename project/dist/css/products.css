@@ -1,6 +1,21 @@
 @charset "UTF-8";
 /* 产品页面的样式 */
 /* 全局样式 */
+.left {
+  float: left; }
+
+.buttonBuy .title_white {
+  width: 100%;
+  height: 18px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  text-align: center; }
+
+.right {
+  float: right; }
+
 .buttonBuy {
   margin: 0 auto; }
 
@@ -17,7 +32,6 @@
   margin: 0 auto;
   width: 10px;
   margin-top: 5px;
-  transition: width .3s ease;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #008cdc; }
@@ -173,20 +187,103 @@
   background: #0286d9; }
 
 .moreAccessories {
-  height: 70px;
   text-align: center;
   font-size: 0;
   margin-top: 100px; }
 
 .moreAccessories img {
-  height: 100%;
+  height: 70px;
   margin: 0 auto; }
 
 .moreAccessories .buttonlink {
-  height: 124px;
+  height: 28px;
   width: 100%; }
 
-.accessories_line1 {
-  margin-top: 124px;
+.moreAccessories .buttonlink {
+  margin-top: 44px; }
+
+.moreAccessories .buttonlink .buttonBuy {
+  width: 60px; }
+
+.product_parts {
   width: 100%;
-  height: auto; }
+  overflow: hidden; }
+
+.product_parts .accessories_line1 {
+  width: 580px;
+  height: 600px;
+  margin-top: 40px;
+  background: #ccc;
+  position: relative; }
+
+.product_parts .accessories_line1 {
+  background: url(../images/20180724174645450868_original.jpg) no-repeat;
+  background-size: auto 100%;
+  position: relative; }
+
+.product_parts .accessories_line1 > div {
+  position: absolute;
+  color: #000;
+  text-align: center; }
+
+.product_parts .accessories_line1 > div:nth-child(1) {
+  width: 100%;
+  height: 24px;
+  margin-top: 60px;
+  top: 0;
+  left: 0;
+  font-size: 23px;
+  line-height: 24px; }
+
+.product_parts .accessories_line1 > div:nth-child(2) {
+  width: 100%;
+  height: 35px;
+  margin-top: 98px;
+  top: 0;
+  left: 0;
+  font-size: 35px;
+  line-height: 35px; }
+
+.product_parts .accessories_line1 #buybtn {
+  position: absolute;
+  display: block;
+  width: 62px;
+  height: 25px;
+  top: 163px;
+  left: 50%;
+  margin-left: -31px; }
+
+.product_parts .accessories_line1 img {
+  width: 100%;
+  height: 100%; }
+
+.vivo-foot-path {
+  height: 70px;
+  width: 100%;
+  padding-top: 30px; }
+
+.vivo-foot-path .foot-path-box {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  border-top: 1px solid #dedede; }
+
+.vivo-foot-path .foot-path-box ol li {
+  float: left;
+  height: 70px;
+  line-height: 70px; }
+
+.vivo-foot-path .foot-path-box ol > li:nth-child(1) {
+  font-size: 60px; }
+
+.vivo-foot-path .foot-path-box ol > li:nth-child(2) {
+  font-size: 14px;
+  margin: 0 8px 0 10px; }
+
+.vivo-foot-path .foot-path-box ol > li:nth-child(3) {
+  font-size: 12px; }
+
+#footer {
+  background: #f7f7f7;
+  padding-top: 1px; }

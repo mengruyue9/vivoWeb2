@@ -8,7 +8,8 @@ require.config({
 		"index":"index",
 		"roll":"roll",
 		"login_regsit":"login_regsit",
-		"products":"products"
+		"products":"products",
+		"json":"json"
 	},
 	shim:{
 		"jquery-cookie":["jquery"],
@@ -19,9 +20,10 @@ require.config({
 	
 })
 
-require(["index","roll","login_regsit","products"],function (index,roll,login_regsit,products) {
+require(["index","roll","login_regsit","products","json"],function (index,roll,login_regsit,products,json) {
 	index.main();
 	roll.roll();
 	login_regsit.loginFun();
 	products.productsFun();
+	json.NEXFun();
 })

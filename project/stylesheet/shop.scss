@@ -1,0 +1,22 @@
+.clear{clear: both;overflow: hidden;}
+#content{
+	height: auto;
+	.cont_banner{
+		.img_list{
+			position: relative;
+			li{
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 523px;
+				text-align: center;
+				overflow: hidden;
+				img{
+					height: 523px;
+					margin: 0 -50%;
+				}
+			}
+		}
+	}
+}
