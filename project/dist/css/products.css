@@ -124,7 +124,8 @@
 
 .product_single_box {
   height: 600px;
-  width: 1200px; }
+  width: 1200px;
+  margin-top: 40px; }
 
 .product_single {
   position: relative;

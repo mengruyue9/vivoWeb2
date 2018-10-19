@@ -44,6 +44,15 @@ gulp.task("scss3",function () {
 	.pipe(gulp.dest("dist/css"))
 	.pipe(connect.reload());
 })
+gulp.task("scss4",function () {
+	return gulp.src("stylesheet/detailPage.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("detailPage.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
 //拷贝js
 gulp.task("scripts",function () {
 	return gulp.src(["*.js","!gulpfile.js"])
@@ -59,7 +68,7 @@ gulp.task("data",function () {
 })
 
 //建立工程的任务
-gulp.task("build",["copy-html","images","scss1","scss2","scss2","scripts","data"],function () {
+gulp.task("build",["copy-html","images","scss1","scss2","scss3","scss4","scripts","data"],function () {
 	console.log("编译成功");
 })
 //监听任务
@@ -70,6 +79,7 @@ gulp.task("watch",function() {
 	gulp.watch(["stylesheet/index.scss"],["scss1"]);
 	gulp.watch(["stylesheet/products.scss"],["scss2"]);
 	gulp.watch(["stylesheet/shop.scss"],["scss3"]);
+	gulp.watch(["stylesheet/detailPage.scss"],["scss4"]);
 	gulp.watch(["*.html"],["copy-html"]);
 })
 

@@ -27,11 +27,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-size: 100%; }
 
+.clear {
+  clear: both; }
+
+#content {
+  background: #f7f7f7; }
+
+#center {
+  width: 1200px;
+  margin: 0 auto; }
+
 #header {
   height: 45px;
   width: 100%;
   background: #191717;
-  position: relative;
   z-index: 100; }
 
 .logo {
@@ -58,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 44px;
   right: 32px;
-  background: #fff; }
+  background: #fff;
+  z-index: 1000; }
 
 #header #user_menu ul {
   padding: 30px 0 0 38px;
@@ -123,7 +133,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #191717;
   position: absolute;
   top: 44px;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden; }
 
 #pull_down .box_list {
   margin-left: 260px; }
@@ -179,6 +191,128 @@ h1, h2, h3, h4, h5, h6 {
 #banner ul li img {
   width: 100%;
   height: 606px; }
+
+/*内容部分*/
+/*右侧购物车样式*/
+.sc_right {
+  z-index: 1006;
+  position: fixed;
+  width: 50px;
+  right: 0px;
+  bottom: 210px;
+  height: 50px;
+  cursor: pointer; }
+
+.sc_pic {
+  width: 40px;
+  height: 40px;
+  padding: 4px 6px;
+  background: url(../images/toolbars.png) #fff 15px 15px no-repeat; }
+
+.sc_result {
+  height: 108px;
+  line-height: 108px;
+  vertical-align: middle;
+  border-top: 1px solid #f9f9f9;
+  padding: 0 34px; }
+  .sc_result div {
+    display: inline-block;
+    width: 110px;
+    vertical-align: middle; }
+    .sc_result div .rmb-symbol {
+      color: #f51919;
+      font-size: 18px; }
+  .sc_result div > :first-child {
+    padding-bottom: 4px;
+    color: #4d4d4d;
+    font-size: 14px; }
+  .sc_result .clearing {
+    width: 104px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 16px / 50%;
+    background: #f00;
+    display: inline-block; }
+
+.sc_num {
+  position: absolute;
+  padding: 2px 8px;
+  border-radius: 50%;
+  background: red;
+  color: #fff;
+  top: -8px;
+  left: 20px;
+  z-index: 1; }
+
+.sc_goods {
+  opacity: 0;
+  /*这是改变滚动条的样式*/
+  /* 这是针对缺省样式 (必须的) */
+  /* 滚动条的滑轨背景颜色 */
+  /* 滑块颜色 */
+  /* 滑轨两头的监听按钮颜色 */
+  /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+  width: 290px;
+  max-height: 408px;
+  border: 1px solid #ebebeb;
+  position: fixed;
+  bottom: 50px;
+  right: 60px;
+  background: #fff; }
+  .sc_goods ::-webkit-scrollbar {
+    width: 3px; }
+  .sc_goods ::-webkit-scrollbar-track {
+    background-color: #ccc; }
+  .sc_goods ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); }
+  .sc_goods ::-webkit-scrollbar-button {
+    background-color: #ccc; }
+  .sc_goods ::-webkit-scrollbar-corner {
+    background-color: black; }
+  .sc_goods ul {
+    max-height: 300px;
+    overflow: auto; }
+    .sc_goods ul li {
+      height: 55px;
+      padding: 22px 34px;
+      border-bottom: 1px solid #f9f9f9; }
+      .sc_goods ul li a {
+        float: left;
+        /* position: relative; */ }
+        .sc_goods ul li a img {
+          width: 55px;
+          height: 55px; }
+      .sc_goods ul li .middle {
+        float: right;
+        padding-top: 10px; }
+        .sc_goods ul li .middle .price {
+          margin-top: 22px;
+          color: #333;
+          font-size: 14px; }
+        .sc_goods ul li .middle .rmb-symbol:before {
+          color: #333; }
+        .sc_goods ul li .middle .goods {
+          color: gray; }
+        .sc_goods ul li .middle .name {
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 10px;
+          width: 110px;
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .sc_goods ul li .middle .num {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 14px; }
+        .sc_goods ul li .middle .num:before {
+          content: "×";
+          margin: 5px 2px 0 0;
+          width: 8px;
+          height: 8px; }
 
 /*quick_nav */
 #quick_nav {

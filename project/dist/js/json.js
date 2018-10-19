@@ -13,7 +13,7 @@ define(["jquery","jquery-cookie"],function($) {
 					html1 += `<li><a href="${head[i].href}">${head[i].title}</a></li>`;
 				}
 				$("#nav_list").html(html1);
-				$("#nav_list li a").eq(0).css("color","#b0b0b0");
+				/*$("#nav_list li a").eq(0).css("color","#b0b0b0");*/
 				
 				var content = res.content;
 				var phone_sort = content[1].phone_sort;

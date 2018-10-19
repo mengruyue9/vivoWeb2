@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>【Z3 全面屏 4GB+64GB】-vivo官方商城</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="css/index.min.css">
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/shop.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/detailPage.min.css">
+	<script type="text/javascript" src = "js/require.js" async = "true" defer data-main = "js/main"></script>
+	<script>
+    window.onload=function () {
+        //获得标签
+        var box=document.getElementById('BigImgs');
+        var mark=document.getElementById('mark');
+        var boxRight=document.getElementById('boxRight');
+        var img=boxRight.getElementsByTagName('img')[0];
+
+
+        //鼠标移入后的效果
+        box.onmouseenter=function (e) {
+            e=e||window.event;
+            mark.style.display='block';
+            boxRight.style.display='block';
+            setPosition(e);
+        };
+
+        //修改放大镜div的坐标
+        function setPosition(e) {
+            //计算坐标
+            var top=e.clientY-mark.offsetHeight/2;
+            var left=e.clientX-mark.offsetWidth/2-20;
+
+            //定义坐标的最大值和最小值
+            var minLeft=minTop=0;
+            var maxLeft=maxTop=box.offsetHeight-mark.offsetHeight;
+
+            //取得特定范围内的坐标
+           //top=top<minTop?minTop:top;
+          //top=top>maxTop?maxTop:top;
+            top=top<minTop?minTop:(top>maxTop?maxTop:top);
+           left=left<minLeft?minLeft:(left>maxLeft?maxLeft:left);
+
+
+            //放大范围的坐标
+            mark.style.top=top+'px';
+            mark.style.left=left+'px';
+
+            //放大图片的坐标
+            img.style.left=-left*800/450+'px';
+            img.style.top=-top*800/450+'px';
+        }
+
+        //鼠标移动的效果
+        box.onmousemove=function (e) {
+            e=e||window.event;
+            setPosition(e);
+
+        };
+
+        boxRight.onmousemove=function (e) {
+            e=e||window.event;
+            setPosition(e);
+
+        };
+
+        //鼠标移出的效果
+        box.onmouseleave=function (e) {
+            e=e||window.event;
+            mark.style.display='none';
+            boxRight.style.display='none';
+            setPosition(e);
+        }
+    }
+</script>
+</head>
+<body class="iconfont" >
+	<div class="sc_right">
+		<div class="sc_pic">
+			<!-- 购物车内商品的数量 -->
+			<div class="sc_num">
+				0
+			</div>
+		</div>
+		<div class="sc_goods">
+			<ul>
+				
+			</ul>
+	
+			<div class="sc_result">
+				购物车还没有商品，快来选购！
+			</div>			
+		</div>
+	</div>
+	<div id="header">
+		<div id="logo"><a href="index.html">&#xe82e;</a></div>
+		<div id="user_menu">
+			<ul>
+				<li><span>&#xe601;</span><i>购物车</i></li>
+				<li><span>&#xe60a;</span><i>我的订单</i></li>
+				<li><span>&#xe65a;</span><i>我的商城</i></li>
+				<li><span>&#xe62d;</span><i>登陆/注册</i></li>
+			</ul>
+		</div>
+		<ul id="nav_list"></ul>
+		<div id="search">&#xe61e;</div>
+		<div id="user">&#xe61f;</div>
+	</div>
+	<!-- 内容 -->
+	<div id="proContent">
+		<div id="center">
+			<div class="crumbs">
+				<a href="">商城首页</a>
+				<b>&#xe662;</b>
+				<a href="">手机产品</a>
+				<b>&#xe662;</b>
+				<span>Z系列</span>
+			</div>
+			<div class="prod-container-top">
+				<div class="prod_container_left">
+					<div>
+						<div id="BigImgs" class="figure">
+							<ul style="position: relative;">
+								<li><img src="images/xq1_0.png" alt=""></li>
+								<div class="hoverbox" id="mark"></div>
+							</ul>
+
+							<div class="magnify" id="boxRight">
+								<img src="images/xq1_0.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="LittleImgs">
+							<div id="smallImgUl" class="spec-items-box">
+								<ul>
+									<li class="bg"><a href=""><img src="images/xq1_0.png" alt=""></a></li>
+									<li><a href=""><img src="images/xq1_1.png" alt=""></a></li>
+									<li><a href=""><img src="images/xq1_2.png" alt=""></a></li>
+									<li><a href=""><img src="images/xq1_3.png" alt=""></a></li>
+									<li><a href=""><img src="images/xq1_4.png" alt=""></a></li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+					<!-- <div class="figure-btn">
+						<a class="figure-btn-l" href=""></a>
+						<a class="figure-btn-r" href=""></a>
+					</div> -->
+				</div>
+				<div class="prod_container_right">
+					<h2>Z3 全面屏 6GB+64GB</h2>
+					<p class="promotion-words">
+						<span>【新品上市，3期免息，预定用户赠双倍积分】</span>骁龙710AIE处理器，6.3英寸水滴屏，双涡轮加速引擎，4D游戏震感，vivo游戏魔盒，红外人脸识别，AI焕颜相机
+					</p>
+					<div class="price_box">
+						<div class="p1">
+							<span><i>￥</i>1898</span>
+						</div>
+						<div class="table-cell">
+							<span class="labal">积分</span>
+							<p class="desc">购买即送3796积分</p>
+						</div>
+					</div>
+					<dl class="server_support">
+						<dt>商品支持：</dt>
+						<dd><span class="blue">&#xeedb;</span>花呗分期</dd>
+						<dd><span class="blue">&#xeedb;</span>以旧换新</dd>
+					</dl>
+					<form action="">
+						<dl class="prod-params">
+							<dt>选择版本容量</dt>
+							<dd>
+								<ul class="tags">
+									<li>全网通版 4G+64G版本</li>
+									<li>全网通版 6G+64G版本</li>
+									<li>全网通版 6G+128G版本</li>
+								</ul>
+							</dd>
+							<dt>选择颜色</dt>
+							<dd>
+								<ul class="phone_color tags">
+									<li><a href=""></a>星夜黑</li>
+									<li><a href=""></a>星夜黑</li>
+									<li><a href=""></a>星夜黑</li>
+								</ul>
+							</dd>
+							
+							<dt>数量</dt>
+							<dd>
+								<label id="dec" for="">-</label>
+								<input id="add-num" type="text" value="1" disabled>
+								<label id="inc" for="">+</label>
+							</dd>
+							<div style="clear: both;"></div>
+							<div class="totalNum">
+								<div class="number"><span>￥</span>1000.00</div>
+								<div class="descs">	已选： 全网通版 6G+64G版本 星夜黑 官方标配 <span class="digital">1</span>件</div>
+							</div>
+							<div class="add-shop-btn">
+								<a class="addSc" href="">加入购物</a>
+								<a class="buyNow" href="">立即购买</a>
+							</div>
+						</dl>
+					</form>
+
+				</div>		
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="xq_list">
+			<ul>
+				<li><a href="">详细信息<b></b></a></li>
+				<li><a href="">包装及规格参数</a></li>
+				<li><a href="">评价(112)</a></li>
+				<li><a href="">评测</a></li>
+				<li><a href="">售后服务</a></li>
+			</ul>
+		</div>
+		<ul class="xq_box">
+			<li class="block">
+				<img src="images/xq_02.jpg" alt="">
+				<img src="images/xq_03.jpg" alt="">
+				<img src="images/xq_04.jpg" alt="">
+				<img src="images/xq_05.jpg" alt="">
+				<img src="images/xq_06.jpg" alt="">
+				<img src="images/xq_07.jpg" alt="">
+				<img src="images/xq_08.jpg" alt="">
+				<img src="images/xq_09.jpg" alt="">
+				<img src="images/xq_10.jpg" alt="">
+				<img src="images/xq_11.jpg" alt="">
+				<img src="images/xq_12.jpg" alt="">
+				<img src="images/xq_13.jpg" alt="">
+			</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+		<div class="top">
+			<ul>
+				<li>
+					<h1>热门链接</h1>
+					<a href="">X23</a><br/>
+					<a href="">X系列</a><br/>
+					<a href="">Xplay系列</a><br/>
+					<a href="">vivo摄影</a><br/>
+					<a href="">查找手机</a><br/>
+					<a href="">常见问题</a><br/>
+				</li>
+				<li>
+					<h1>在线购买</h1>
+					<a href="">官方商城</a><br/>
+					<a href="">选购手机</a><br/>
+					<a href="">选购配件</a><br/>
+					<a href="">选购碎屏保</a><br/>
+					<a href="">以旧换新</a><br/>
+					<a href="">服务保障</a><br/>
+				</li>
+				<li>
+					<h1>服务支持</h1>
+					<a href="">服务首页</a><br/>
+					<a href="">服务网点查询</a><br/>
+					<a href="">真伪查询</a><br/>
+					<a href="">服务政策</a><br/>
+					<a href="">预约维修</a><br/>
+					<a href="">维修配件价格</a><br/>
+				</li>
+				<li>
+					<h1>vivo社区</h1>
+					<a href="">社区首页</a><br/>
+					<a href="">摄影专区</a><br/>
+					<a href="">微博</a><br/>
+					<a href="">贴吧</a><br/>
+					<a href="">兴趣部落</a><br/>
+				</li>
+				<li>
+					<h1>关于vivo</h1>
+					<a href="">vivo简介</a><br/>
+					<a href="">工作机会</a><br/>
+					<a href="">新闻资讯</a><br/>
+					<a href="">采购平台</a><br/>
+					<a href="">开发者平台</a><br/>
+				</li>
+			</ul>
+			<div class="phone iconfont">
+				<div class="online">
+					<b>&#xe617;</b>
+					<a href="">在线客服</a>
+				</div>
+				<h1>400-678-9688</h1>
+				<p>24小时全国服务热线</p>
+			</div>
+		</div>
+		<div class="bottom">
+			<p class="copyright">Copyright ©2011-2018 广东步步高电子工业有限公司 版权所有 保留一切权利 | <a href="">隐私政策</a> | <a href="">法律声明</a> | <a href="">粤B2-20080267 </a>| <a href="">粤ICP备05100288号</a><img src="images/gssw-icon-x2_db0a7f6.png" alt=""></p>
+			<div class="b_right"><span class="attention">关注</span> | <span class="china">&#xe642; 中国</span></div>
+			<div id="menu">
+				<p class="sina"><span>&#xe62a;</span><i>微博</i></p>
+				<p class="wechat">
+					<span>&#xe630;</span>
+					<i>微信</i>
+					<img src="images/wechatCode.png" alt="">
+				</p>
+				<p class="pay">
+					<span>&#xe64b;</span>
+					<i>支付宝</i>
+					<img src="images/payCode.png" alt="">
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

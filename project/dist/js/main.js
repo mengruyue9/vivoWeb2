@@ -10,7 +10,8 @@ require.config({
 		"login_regsit":"login_regsit",
 		"products":"products",
 		"json":"json",
-		"vivoStore":"vivoStore"
+		"vivoStore":"vivoStore",
+		"detailPage":"detailPage"
 	},
 	shim:{
 		"jquery-cookie":["jquery"],
@@ -21,12 +22,13 @@ require.config({
 	
 })
 
-require(["index","roll","login_regsit","products","json","vivoStore"],function (index,roll,login_regsit,products,json,vivoStore) {
+require(["index","roll","login_regsit","products","json","vivoStore","detailPage"],function (index,roll,login_regsit,products,json,vivoStore,detailPage) {
 	index.main();
 	roll.roll();
 	login_regsit.loginFun();
 	products.productsFun();
 	json.NEXFun();
 	vivoStore.storeFun();
+	detailPage.detailFun();
 
 })

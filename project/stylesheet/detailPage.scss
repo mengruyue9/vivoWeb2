@@ -1,0 +1,392 @@
+img{display: inline-block;}
+.crumbs{
+	color: #999;
+    font-size: 13px;
+    padding: 24px 0;
+}
+.prod-container-top{
+	width: 1200px;
+	position: relative;
+
+	.prod_container_left{
+		width: 515px;
+  	    height: 515px;
+		float: left;
+		height: auto;
+	    margin-top: 5px;
+	    margin-bottom: 48px;
+		/* position: fixed;
+		top:0; */
+		.figure{
+			width: 515px;
+  	   		height: 515px;
+  	   		position: relative;
+  	   		border:1px solid #ccc;
+			ul{
+
+				li{
+					width: 100%;
+				    overflow: hidden;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    img{
+						width: 515px;
+						height: 515px;
+					}
+				}
+				
+			}
+			.hoverbox{
+				position: absolute;
+			    top: 0;
+			    height: 150px;
+			    width: 150px;
+			    cursor: move;
+			    z-index: 10;
+			    background: #ddd;
+			    opacity: 0.3;
+		        border: 1px solid #ccc;
+		        display: none;
+			}
+			.magnify{
+				width:515px;
+				height:515px;
+				background: #fff;
+				border:1px solid #f00;
+				position: absolute;
+				top:0;
+				left: 515px;
+				overflow: hidden;
+				display: none;
+				img{
+					width: 1000px;
+					height: 1000px;
+					 position: absolute;
+				    top: 0;
+				    left: 0;
+				}
+			}
+			
+		}
+		.LittleImgs{
+			height: 102px;
+		    width: 366px;
+		    overflow: hidden;
+		    margin-left: 77px;
+		    padding-top: 50px;
+		    text-align: center;
+		    position: relative;
+		    z-index: 3;
+			ul{
+				position: absolute;
+				width: 546px;
+				padding: 0;
+			    margin: 0;
+			    z-index: 0;
+				li{
+					float: left;
+				    width: 86px;
+				    height: 86px;
+				    margin: 0 2px;
+				    background: #f1f1f1;
+				    border: 1px solid #f1f1f1;
+					img{
+						width: 87px;
+				    	height: 87px;
+					}
+				}
+				.bg{
+					background: #fff;
+					border: 1px solid #f00;
+				}
+			}
+
+			
+		}
+		.figure-btn{
+				a{
+					position: absolute;
+				    background: url(../images/prod-figure-btn_041114f.png) no-repeat;
+				    width: 38px;
+				    height: 38px;
+				    top: 0;
+				    left: 0;
+				    zoom: 1;
+				}
+				.figure-btn-l{
+					left: 31px;
+    				background-position: -3px -83px;
+				}
+				.figure-btn-r{
+					right: 29px;
+   					background-position: -3px -123px;
+				}
+			}
+	}
+	::-webkit-scrollbar {
+					  width: 1px;
+				} /* 这是针对缺省样式 (必须的) */
+				::-webkit-scrollbar-track {
+					  background-color: #ccc;
+				} /* 滚动条的滑轨背景颜色 */
+
+				::-webkit-scrollbar-thumb {
+					  background-color: rgba(0, 0, 0, 0.2); 
+				} /* 滑块颜色 */
+
+				::-webkit-scrollbar-button {
+					  background-color: #ccc;
+				} /* 滑轨两头的监听按钮颜色 */
+
+				::-webkit-scrollbar-corner {
+					  background-color: black;
+				} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+	.prod_container_right{
+		float: right;
+		height: 700px;
+		overflow: auto;
+		width: 525px;
+
+		h2{
+			font-size: 34px;
+		    height: 39px;
+		    color: #000;
+		    margin-top: 11px;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+
+		}
+		form{
+			display: block;
+		}
+		.promotion-words{
+
+		    line-height: 22px;
+		    margin-top: 10px;
+		    font-size: 14px;
+		    color: #333;
+		    word-break: break-all;
+		    word-wrap: break-word;
+		    overflow: hidden;
+		    span{
+		    	color: #FF4B3D;
+		    }
+		}
+		.price_box{
+			margin-top: 36px;
+		    margin-bottom: 15px;
+		    padding: 40px 0 37px;
+		    border-top: 1px solid #e4e4e4;
+		    border-bottom: 1px solid #e4e4e4;
+		    vertical-align: middle;
+		    .p1{
+		    	display: inline-block;
+		    	width: 178px;
+		    	border-right: 1px solid #ccc;
+		    	span{
+		    		display: block;
+				    font-size: 40px;
+				    color: #f51200;
+				    line-height: 38px;
+				    i{
+				    	font-size: 27px;
+				    }
+		    	}
+		    }
+		    .table-cell{
+		    	float: right;
+		    	vertical-align: middle;
+		    	margin-right: 84px;
+		    	span{
+		    		display: inline-block;
+		    		width: 38px;
+		    		height: 20px;
+		    		background: #ff0f1d;
+		    		color: #fff;
+		    		text-align: center;
+		    		line-height: 20px;
+		    		margin:10px 18px 0 35px;
+		    		border-radius: 3px;
+
+		    	}
+		    	.desc{
+		    		display: inline-block;
+
+		    	}
+		    }
+		}
+		.server_support{
+			margin-bottom: 9px;
+		    padding: 10px 0 36px;
+		    font-size: 16px;
+		    dt{
+		    	float: left;
+
+		    }
+		    dd{
+		    	float: left;
+		    	padding-left: 22px;
+    			cursor: pointer;
+    			.blue{
+    				margin-right: 5px;
+				    font-size: 16px;
+				    color: #00ACFF;
+				    vertical-align: middle;
+    			}
+		    }
+		}
+		.prod-params{
+			dt{
+				padding: 20px 0 0;
+			    font-size: 19px;
+			    line-height: 1;
+			    margin-bottom: 20px;
+			    color: #333;
+			    height: 22px;
+			    overflow: hidden;
+			}
+			.tags{
+				li{
+					margin-left: 15px;
+				    margin-bottom: 15px;
+				    text-align: center;
+				    font-size: 15px;
+				    color: #777;
+				    cursor: pointer;
+				    border: 1px solid #DDD;
+				    border-radius: 3px;
+				    overflow: hidden;
+				}
+				li{
+					display: inline-block;
+					height: 57px;
+				    line-height: 55px;
+				    width: 240px;
+				}
+			}
+			.parts{
+				position: relative;
+			    width: 158px;
+			    height: 91px;
+			    line-height: 0;
+			    margin-left: 15px;
+				    margin-bottom: 15px;
+				    text-align: center;
+				    font-size: 15px;
+				    color: #777;
+				    cursor: pointer;
+				    border: 1px solid #DDD;
+				    border-radius: 3px;
+				    overflow: hidden;
+			}
+			h2{
+				    font-size: 16px;
+    				margin-top: 21px;
+			}
+		}
+		dd{
+			label,input{
+				float: left;
+			    width: 60px;
+			    height: 57px;
+			    line-height: 55px;
+			    font-size: 30px;
+			    text-align: center;
+			    display: inline-block;
+			    border:1px solid #d2d2d2;
+			    color: #585858;
+		   
+		   
+			}
+			label{
+				cursor: pointer;
+			}
+		 	#add-num{
+		    	width: 62px;
+		    	border: none;
+		    	border-top:1px solid #d2d2d2;
+		    	border-bottom:1px solid #d2d2d2;
+		    	font-size: 17px;
+		    	background: #fff;
+		    }
+
+		}
+		.totalNum{
+			padding: 58px 0;
+			.number,.descs{
+				display: inline-block;
+			}
+			.number{
+				height: 20px;
+				border-right: 1px solid #e0e0e0;
+			    margin-right: 18px;
+			    padding-right: 18px;
+			    font-size: 25px;
+			    color: #f51200;
+			    white-space: nowrap;
+			    margin-top: 6px;
+			    line-height: 20px;
+			}
+			.descs{
+				width: 350px;
+				vertical-align: top;
+			    color: #666;
+			    font-size: 16px;
+			    word-break: break-all;
+			    word-wrap: break-word;
+			    line-height: 32px;
+			}
+		}
+		.add-shop-btn{
+			margin-bottom: 86px;
+			a{
+				display: inline-block;
+				width: 170px;
+				height: 46px;
+				border-radius: 46px;
+				background: red;
+				text-align: center;
+				line-height: 46px;
+				color: #fff;
+			}
+			.addSc{
+				background: #ff9537;
+				margin-right: 26px;
+			}
+		}
+
+		
+	}
+}
+.fixed{
+	position: fixed;
+	top: 0;
+}
+.xq_list{
+	height: 80px;
+	border-top: 1px solid #ccc;
+	li{
+		float: left;
+		line-height: 80px;
+		margin:0 32px;
+		a{
+			color: #4f4057;
+		}
+	}
+}
+.xq_box{
+	li{
+		height: 1000px;
+		display: none;
+	}
+	.block{
+	display: block;
+	img{
+		width: 100%;
+		float: left;
+	}
+}
+
+}
