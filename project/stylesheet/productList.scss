@@ -1,0 +1,207 @@
+a:hover{
+		color:#000;
+	}
+.filter_wrap{
+	padding: 0 36px;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 38px;
+	
+    .filter_tab{
+		padding:7px 0 1px;
+		font-size: 14px;
+		height: 100%;
+		 
+		.filter_tab_menu{
+			margin-right: 36px;
+			display: inline-block;
+			a{
+				position: relative;
+			    display: block;
+			    color: #777;
+			    font-size: 16px;
+			    text-align: center;
+			    line-height: 63px;
+			}
+			a:hover{
+				color:#000;
+			}
+			.active{
+				color: #000;
+			}
+			.active:after{
+				content: "";
+			    position: absolute;
+			    left: 18px;
+			    right: 18px;
+			    bottom: -2px;
+			    height: 1px;
+			    background: #000;
+			}
+		}
+		/* :after{
+		content: "";
+			    position: absolute;
+			    left: 18px;
+			    right: 18px;
+			    bottom: 0;
+			    height: 1px;
+			    background: #000;
+		} */
+	}
+	.filter_tags{
+		padding: 2px 0;
+		border-top: 1px solid #ccc;
+		.filter_tab_cont{
+			overflow: hidden;
+    		padding: 11px 0;
+    		.active{
+				color: #000;
+			}
+    		a{
+    			margin-right: 44px;
+			    white-space: nowrap;
+			    color: #777;
+			    line-height: 30px;
+    		}
+    		a:hover{
+				color:#000;
+			}
+		}
+	}
+
+}
+.prot_lists{
+	height: 1318px;
+	.spu_item_list2{
+		display: none;
+	}
+	.spu_item_list,.spu_item_list2{
+		width: 101%;
+		.spu_item{
+			float: left;
+		    margin-right: 11px;
+		    width: 292px;
+		    height: 340px;
+		    padding-top: 40px;
+		    overflow: hidden;
+		    position: relative;
+		    display: inline-block;
+		    vertical-align: top;
+		    margin-bottom: 10px;
+		    font-size: 0;
+		    text-align: center;
+		    background-color: #fff;
+		    a{
+		    	display: block;
+			    position: relative;
+			    .crner_good{
+			    	position: absolute;
+				    width: 47px;
+				    height: 47px;
+				    background-position: right top;
+				    background-repeat: no-repeat;
+				    right: 60px;
+				    top: -7px;
+				    z-index: 1;
+				    img{
+				    	width: 100%;
+				    	height: auto;
+				    }
+
+			    }
+			   	.figure{
+			   		display: block;
+				    width: 180px;
+				    height: 180px;
+				    margin: 0 auto;
+				    position: relative;
+				    img{
+				    	display: block;
+					    width: 180px;
+					    height: 180px;
+				    }
+			   	}
+			   	p{
+			   		text-align: center;
+    				overflow: hidden;
+			   	}
+			   	.spu_info{
+			   		width: 180px;
+    				margin: 20px auto 0;
+    				.name{
+    					margin: 0 0 10px;
+					    color: #000;
+					    font-size: 16px;
+					    height: 20px;
+					    line-height: 20px;
+					    white-space: nowrap;
+					    text-overflow: ellipsis;
+    				}
+    				.feature{
+    					margin: 0 0 23px;
+					    height: 35px;
+					    color: #333;
+					    font-size: 12px;
+					    line-height: 18px;
+					    word-break: break-all;
+					    word-wrap: break-word;
+					    .sale_point{
+					    	margin-left: 0.5em;
+					    }
+    				}
+			   	}
+			   	.price{
+					color: #f51919;
+				    font-size: 16px;
+				    line-height: 1;
+			   	}
+		    }
+		}
+	}
+	.page{
+		.pull_right{
+			float: right;
+			.pagination{
+				text-align: center;
+			    padding: 34px 0;
+			    margin-bottom: 50px;
+			    a{
+			    	display: inline-block;
+				    vertical-align: middle;
+				    line-height: 18px;
+				    height: 18px;
+				    padding: 4px 2px;
+				    min-width: 30px;
+				    white-space: nowrap;
+				    font-size: 14px;
+				    text-align: center;
+				    color: #333;
+				    border: 1px solid #ddd;
+			    }
+			    a:hover{
+			    	border: 1px solid #000;
+			    }
+			    .border{
+			    	border: 1px solid #000;
+			    }
+			    .prev,.next,.sure,input{
+			    	padding: 4px 10px;
+			    }
+			    input{
+			    	width: 60px;
+				    line-height: normal;
+				    border: 1px solid #ddd;
+				    margin-right: 6px;
+				    padding-left: 3px;
+				    margin-bottom: 4px;
+				    background: transparent;
+				    border-radius: 0;
+			    }
+			}
+		}
+	}
+	
+}

@@ -81,12 +81,12 @@ define(["jquery","jquery-cookie"],function ($) {
 					bLisHtml += `<div class="case">
 						<a target="_blank" href="${boxList[i].href}"><img src="${boxList[i].images}" alt=""></a>
 						<div class="color-wrapper" >
-						     <div id = "${i}" class = "addCart" href="">加入购物车</div>
+						     <div id = "${i}" price ='${boxList[i].price}' class = "addCart" href="">加入购物车</div>
 						</div>
 						<div class="prodinfo c_3">
 							<p class="name">${boxList[i].name}</p>
 							<p class="feature">${boxList[i].feature}</p>
-							<p class="price rmb-symbol" price = ${boxList[i].price}>${boxList[i].price}</p>
+							<p class="price rmb-symbol">${boxList[i].price}</p>
 						</div>
 					</div>`;
 				}
@@ -103,8 +103,9 @@ define(["jquery","jquery-cookie"],function ($) {
 		})
 		$(".box_list").on("click",".addCart",function () {
 			sc_msg();
-			var price = this.price;
-			var id = this.id;
+			var price = parseInt($(this).attr('price'));
+			alert(price);
+			var id = this.id;alert(id);
 			var first = $.cookie("goods");
 			//1、判断是否第一次添加cookie
 			var first = $.cookie("goods") == null ? true : false;
@@ -118,6 +119,7 @@ define(["jquery","jquery-cookie"],function ($) {
 				for(var i = 0; i < arr.length; i++){
 					if(arr[i].id == id){
 						//之前添加过
+						var sumPrice = 0;
 						arr[i].num++;
 						var cookieStr = JSON.stringify(arr);
 						$.cookie('goods', cookieStr, {expires: 7,raw:true});
@@ -128,7 +130,7 @@ define(["jquery","jquery-cookie"],function ($) {
 
 				if(!same){
 					//之前没添加过
-					var obj = {id: id, num: 1};
+					var obj = {id: id, num: 1,price:price};
 					arr.push(obj);
 					var cookieStr = JSON.stringify(arr);
 					$.cookie('goods', cookieStr, {expires: 7,raw:true});
@@ -164,9 +166,6 @@ define(["jquery","jquery-cookie"],function ($) {
 					}
 				})
 			}
-			$(".sc_goods").on("load",".price",function () {
-				alert($(this).html);
-			})
 	function sc_car(){
 		var sc_str = $.cookie("goods");
 		if(sc_str){
@@ -176,13 +175,13 @@ define(["jquery","jquery-cookie"],function ($) {
 
 			for(var i = 0; i < sc_arr.length; i++){
 				sum += sc_arr[i].num;
-				
+				accum += sc_arr[i].num * sc_arr[i].price
 			}
 			$(".sc_result").html(`<div>
 					<p>共${sum}件商品</p>
-					<p class="rmb-symbol">1000000</p>
+					<p class="rmb-symbol">${accum}</p>
 				</div>
-				<a class="clearing" href="">立即结算</a>`);
+				<a class="clearing" href="shoppingcart.html">立即结算</a>`);
 			$(".sc_num").html(sum);
 		}
 	}

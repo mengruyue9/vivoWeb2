@@ -53,6 +53,24 @@ gulp.task("scss4",function () {
 	.pipe(gulp.dest("dist/css"))
 	.pipe(connect.reload());
 })
+gulp.task("scss5",function () {
+	return gulp.src("stylesheet/productList.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("productList.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+gulp.task("scss6",function () {
+	return gulp.src("stylesheet/shoppingcart.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("shoppingcart.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
 //拷贝js
 gulp.task("scripts",function () {
 	return gulp.src(["*.js","!gulpfile.js"])
@@ -68,7 +86,7 @@ gulp.task("data",function () {
 })
 
 //建立工程的任务
-gulp.task("build",["copy-html","images","scss1","scss2","scss3","scss4","scripts","data"],function () {
+gulp.task("build",["copy-html","images","scss1","scss2","scss3","scss4","scss5","scss6","scripts","data"],function () {
 	console.log("编译成功");
 })
 //监听任务
@@ -80,6 +98,8 @@ gulp.task("watch",function() {
 	gulp.watch(["stylesheet/products.scss"],["scss2"]);
 	gulp.watch(["stylesheet/shop.scss"],["scss3"]);
 	gulp.watch(["stylesheet/detailPage.scss"],["scss4"]);
+	gulp.watch(["stylesheet/productList.scss"],["scss5"]);
+	gulp.watch(["stylesheet/shoppingcart.scss"],["scss6"]);
 	gulp.watch(["*.html"],["copy-html"]);
 })
 

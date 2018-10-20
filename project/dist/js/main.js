@@ -11,7 +11,8 @@ require.config({
 		"products":"products",
 		"json":"json",
 		"vivoStore":"vivoStore",
-		"detailPage":"detailPage"
+		"detailPage":"detailPage",
+		"productList":"productList"
 	},
 	shim:{
 		"jquery-cookie":["jquery"],
@@ -22,7 +23,7 @@ require.config({
 	
 })
 
-require(["index","roll","login_regsit","products","json","vivoStore","detailPage"],function (index,roll,login_regsit,products,json,vivoStore,detailPage) {
+require(["index","roll","login_regsit","products","json","vivoStore","detailPage","productList"],function (index,roll,login_regsit,products,json,vivoStore,detailPage,productList) {
 	index.main();
 	roll.roll();
 	login_regsit.loginFun();
@@ -30,5 +31,6 @@ require(["index","roll","login_regsit","products","json","vivoStore","detailPage
 	json.NEXFun();
 	vivoStore.storeFun();
 	detailPage.detailFun();
+	productList.proListFun();
 
 })

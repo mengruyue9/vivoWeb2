@@ -50,13 +50,13 @@ img {
         border: 1px solid #ccc;
         display: none; }
       .prod-container-top .prod_container_left .figure .magnify {
-        width: 515px;
-        height: 515px;
+        width: 400px;
+        height: 400px;
         background: #fff;
         border: 1px solid #f00;
         position: absolute;
         top: 0;
-        left: 515px;
+        left: 535px;
         overflow: hidden;
         display: none; }
         .prod-container-top .prod_container_left .figure .magnify img {
