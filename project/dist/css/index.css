@@ -580,6 +580,12 @@ input::-ms-input-placeholder {
   color: #86c8ff;
   font-size: 26px; }
 
+.namTip, .pwTip {
+  font-size: 12px;
+  color: red;
+  display: block;
+  margin-bottom: 5px; }
+
 #login_bottom {
   height: 127px;
   background: #f7f7f7;

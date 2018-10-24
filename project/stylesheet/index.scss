@@ -270,11 +270,12 @@ input::-ms-input-placeholder {
 #login_window .otherStyle{height: 42px;line-height: 42px;font-size:12px;color: #999;}
 #thirdLogin{text-align: center;}
 #thirdLogin span a{color: #86c8ff;font-size: 26px}
-
+.namTip,.pwTip{font-size: 12px;color: red;display: block;margin-bottom: 5px;}
 #login_bottom{height: 127px;background: #f7f7f7;padding-top: 37px;}
 #login_bottom p{height: 26px;line-height: 26px;text-align: center;font-size: 12px;color: #a89db3}
 #login_bottom p a{color: #666;padding: 0 8px}
 /* 注册界面 */
+
 #register_content{height: 710px;background: #f7f7f7;overflow: hidden;text-align: center;display: none;}
 #register_box{padding:50px 284px 0;width: 332px;height: 488px;box-shadow: 0 0 10px 3px #ccc;margin: 0 auto;margin-top: 80px;background: #fff;}
 #register_box #vivo_logo{margin: 0 auto 32px;}
